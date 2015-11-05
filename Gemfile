@@ -27,9 +27,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
 
-# 
-#gem 'mail_form', '~> 1.5.1'
-#gem 'simple_form', '~> 3.2.0'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
@@ -48,7 +46,7 @@ group :development, :test do
   gem 'spring'
 end
 group :production do
-  gem 'pg',             '0.17.1'
-  gem 'rails_12factor', '0.0.2'
+  gem 'pg'     
+  gem 'rails_12factor'
   #gem 'puma',           '2.11.1'
 end
