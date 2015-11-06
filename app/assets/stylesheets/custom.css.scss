@@ -15,7 +15,6 @@
   padding-left: 38px !important; 
  }
  body {
-	padding: 50px;
   background-image: url('http://www.publicdomainpictures.net/pictures/20000/nahled/background-of-old-books.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -25,6 +24,7 @@
 
 .container {
 	width: 80%;
+  padding: 60px 10px;
 }
 
 .book {
@@ -34,7 +34,7 @@
   padding: 20px;
   margin-top: 20px;
 }
-h1, h2, h3, p, a {
+h1, h2, h3, a {
   color: white;
   padding: 30px 0px;
 }
@@ -65,7 +65,7 @@ td, th {
 
 /*##################   Show ################*/
 .book {
-  text-align: center;
+  text-align: left;
 }
 .note-title {
 	font-weight: bold;
@@ -105,10 +105,6 @@ form {
     }
 }
 
-.btn {
-  
-}
-
 .my-btn {
   background-color: rgba(255,255,255,0.3) !important;
   text-align: center !important;
@@ -119,6 +115,8 @@ form {
   width: 15% !important;
   padding: 5px !important;  
   
+  margin: 30px 0px;
+
   border-radius: 3px !important;
   font-size: 20px !important;
   &:hover {
@@ -136,8 +134,8 @@ form {
   
   width: 200px !important;
   padding: 5px !important;  
-  margin-left: -13px;
-  margin: 20px, 0px;
+  
+  margin: 30px 0px 30px -13px;
   
   border-radius: 3px !important;
   font-size: 20px !important;
@@ -157,7 +155,7 @@ form {
   
   width: 200px !important;
   padding: 5px !important;  
-  margin: 20px, 0px !important;
+  margin: 30px 0px  !important;
   
   border-radius: 3px !important;
   font-size: 20px !important;
@@ -169,4 +167,15 @@ form {
 }
 .actions {
   margin: 20px 0px;
+
+}
+
+/*######## FOOTER ############*/
+.footer {
+  height: 250px;
+  background-color: #427181; 
+  border-top: 5px solid #814271;
+  h4, a {
+    color: #814271;
+  }
 }

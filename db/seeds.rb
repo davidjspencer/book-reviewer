@@ -1,4 +1,5 @@
 Book.destroy_all
+Reviewer.destroy_all
 
 Book.create! [
   { name: "Eloquent Ruby", author: "Russ Olsen" },
@@ -8,10 +9,20 @@ Book.create! [
   { name: "The Ruby Programming Language", author: "David Flanagan" }
 ]
 
-Note.destroy_all
+
 
 eloquent = Book.find_by name: "Eloquent Ruby"
 eloquent.notes.create! [
   { title: "Wow", note: "Great book to learn Ruby" },
   { title: "Yeah", note: "What she said"}
 ]
+
+reviewers = Reviewer.create! [
+  { name: "Joe", password: "abc123"},
+  { name: "Jim", password: "123abc"}
+]
+
+Book.all.each do |book|
+	book.reviewer = reviewers.sample
+	book.save!
+end
